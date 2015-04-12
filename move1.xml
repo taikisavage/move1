@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="179" x="-168" y="-22">
+  <block type="movement_forward" id="179" x="-262" y="-47">
     <next>
       <block type="robot_delay" id="197" inline="true">
         <value name="DELAY">
@@ -17,7 +17,12 @@
                   </block>
                 </value>
                 <next>
-                  <block type="movement_stop" id="232"></block>
+                  <block type="oled_drawtext" id="360">
+                    <field name="TEXT">hello</field>
+                    <next>
+                      <block type="movement_stop" id="232"></block>
+                    </next>
+                  </block>
                 </next>
               </block>
             </next>
