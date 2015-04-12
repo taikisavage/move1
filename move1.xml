@@ -8,7 +8,12 @@
           </block>
         </value>
         <next>
-          <block type="movement_stop" id="232"></block>
+          <block type="multimedia_playwav" id="298">
+            <field name="WAV">beep</field>
+            <next>
+              <block type="movement_stop" id="232"></block>
+            </next>
+          </block>
         </next>
       </block>
     </next>
