@@ -8,8 +8,13 @@
           </block>
         </value>
         <next>
-          <block type="multimedia_playwav" id="298">
-            <field name="WAV">beep</field>
+          <block type="led_select" id="307" inline="true">
+            <field name="ACTION">ON</field>
+            <value name="LED">
+              <block type="math_number" id="320">
+                <field name="NUM">2000</field>
+              </block>
+            </value>
             <next>
               <block type="movement_stop" id="232"></block>
             </next>
